@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ===== Kimis Style  ======= */
+
+body {
+    width: 95vw;
+    margin: 0px 2.5vw;
+    background-color: hsl(0, 0%, 96.1%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: hsl(210, 20%, 98%);
+}
+
+header {
+    padding: 30px;
+    background-image: linear-gradient(to right, hsl(232.1, 66.1%, 64.1%) , hsl(267, 37.2%, 46.9%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 30px;
+}
+
+.search-form input {
+    margin: 3px;
+    padding: 10px;
+    width: 300px;
+    height: 30px;
+
+    border-width: 4px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: hsl(240, 3.6%, 89%);
+
+    border-left-width: 6px;
+    border-left-color: hsl(37.2, 92.4%, 58.6%);
+}
+
+.search-form input::placeholder {
+    font-size: 18px;
+}
+
+.search-form button {
+    width: 120px;
+    height: 57px;
+    margin: 3px;
+    font-size: 15px;
+    background-color: hsl(160.1, 84.1%, 39.4%);
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+/* ================ Main style ============================= */
+
+main {
+    /* padding: 35px; */
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    height: auto;
+    width: 60%;
+    margin: 35px 0 35px 35px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    padding: 30px;
+    display: block;
+}
+
+.blog-post p {
+    line-height: 2em;
+    width: 80%;
+}
+
+.blog-post:hover {
+    border: 3px solid hsl(250.7, 41.9%, 55.5%);
+    background-image: linear-gradient(to right, #f0f4ff , #fefefe);
+    background-color: #f0f4ff;
+}
+
+.blog-post:nth-child(even) {
+    max-width: 25%;
+}
+
+.blog-post>h2 {
+    margin: 20px 0;
+}
+
+.blog-post>h2>a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px;
+    /* margin: 20px; */
+    /* padding: 10px; */
+    color: hsl(250.7, 41.9%, 55.5%);
+}
+
+.meta {
+    margin: 10px;
+    margin-left: 0px;
+    color: hsl(223.3, 9.4%, 62.4%);
+}
+
+.meta::first-letter {
+    color: hsl(229, 74.9%, 65.7%);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* main article > p {
+    margin: 10px;
+    margin-left: 0px;
+} */
+
+.meta>time {
+    color: hsl(222.9, 9.4%, 43.7%);
+    font-weight: bold;
+}
+
+.meta span::before {
+    content: "\"";
+    font-weight: bold;
+    color: hsl(250.7, 41.9%, 55.5%);
+}
+
+.meta span::after {
+    content: "\"";
+    font-weight: bold;
+    color: hsl(250.7, 41.9%, 55.5%);
+
+}
+
+.blog-post:nth-child(odd)>p:first-child {
+    text-indent: 2em;
+}
+
+.read-more {
+    display: block;
+    text-decoration: none;
+    color: hsl(250.7, 41.9%, 55.5%);
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.tags {
+    margin: 30px 0;
+}
+
+.tag {
+    color: hsl(250.7, 41.9%, 55.5%);
+    background-color: hsl(228.4, 93.9%, 93.5%);
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+
+.tag:hover {
+    background-color: hsl(43.2, 95.7%, 54.5%);
+    color: hsl(34.1, 77.7%, 36.9%);
+}
+
+
+
+.tag::before {
+    content: "#";
+    color: hsl(229, 74.9%, 65.7%);
+}
+
+
+/* ============= ASIDE =============== */
+
+aside {
+    padding: 20px;
+    background-color: hsl(210, 20%, 98%);
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.widget>h3{
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+a[href*="#popular"] {
+    text-decoration: none;
+    margin: 10px 0;
+    color: hsl(250.7, 41.9%, 55.5%);
+}
+
+.widget>ul>li {
+    margin: 5px 0;
+    padding: 10px 0;
+    padding-left: 10px;
+}
+
+.widget>ul>li:nth-child(even) {
+    background-color: hsl(220, 14.3%, 95.9%);
+    border-radius: 5px;
+}
