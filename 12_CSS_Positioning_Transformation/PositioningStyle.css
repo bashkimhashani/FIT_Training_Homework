@@ -46,7 +46,6 @@ table {
 
 body {
     width: 1440px;
-    padding-top: 40px;
     background-color: #F4F6F7;
 }
 
@@ -58,10 +57,11 @@ main {
 
 .main-header {
     width: 1170px;
-    height: 36px;
+    height: 76px;
     position: fixed;
     left: 135px;
-    margin: 0 auto;
+    top: 40px;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,9 +102,11 @@ main {
 .hero {
     width: 1168px;
     height: 413px;
-    position: absolute;
-    top: 220px;
-    left: 135px;
+    position: relative;
+
+    top: 178px;
+    /* left: 135px; */
+
     /* margin: 220px auto 180px auto; */
     display: flex;
     flex-direction: row;
@@ -171,9 +173,9 @@ main {
 .services-container {
     width: 1440px;
     height: 525px;
-    position: absolute;
+    position: relative;
     left: 0;
-    top: 810px;
+    top: 397px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
@@ -254,8 +256,8 @@ main {
 .stats {
     width: 1440px;
     height: 205px;
-    position: absolute;
-    top: 1336px;
+    position: relative;
+    top: 398px;
     left: auto;
     right: auto;
     display: flex;
@@ -306,7 +308,7 @@ main {
     height: 700px;
 
     position: relative;
-    top: 1541px;
+    top: 378px;
 
     background-color: #FFFFFF;
 
