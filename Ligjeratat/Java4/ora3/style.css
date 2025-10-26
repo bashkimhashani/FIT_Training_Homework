@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 60px;
+    font-family: sans-serif;
+}
+
+input {
+    padding: 18px;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}

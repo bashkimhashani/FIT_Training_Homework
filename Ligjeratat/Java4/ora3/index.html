@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="GET">
+            <p>favorite Fruits</p>
+            <label>
+                Apple 
+                <input type="checkbox" name="fruits">
+            </label>
+            <br>
+            <label>
+                Orange 
+                <input type="checkbox" name="fruits">
+            </label>
+            <br>
+            <label>
+                Strawberry 
+                <input type="checkbox" name="fruits">
+            </label>
+            <br>
+            <label>
+                Grape
+                <input type="checkbox" name="fruits">
+            </label>
+            <br>
+            <label>
+                Others
+                <input type="text" name="Others" value="Your input goes here">
+            </label>
+            <br>
+            <label>
+                Movies
+                <select name="movies" required >
+                    <option selected value="">DUNE</option>
+                    <option value="">Star Wars</option>
+                    <option disabled selected value="">Titanic</option>
+                </select>
+            </label>
+            <br>
+            <label> 
+                <input minlength="5" maxlength="15f" type="password" name="password">
+                Password
+            </label>
+            <div class="input-wrapper">
+                <label for="input-text">
+                    enter some text
+                </label>
+                <input type="text" id="input-text">
+            </div>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label>
+                    <input type="email">
+                    your Email
+                </label>
+                <br>
+                <label>
+                    <input type="num">
+                    Your Phone?
+                </label>
+                <br>
+                <label>
+                    <input type="url" name="url">
+                    Url
+                </label>
+                <br>
+                <label>
+                    <input type="date" name="b-day">
+                    Birth Day
+                </label>
+            </fieldset>
+             
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
