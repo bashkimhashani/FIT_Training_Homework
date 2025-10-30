@@ -1,0 +1,11 @@
+
+
+svg:hover path {
+    fill: green;
+}
+
+.svg-container {
+    width: 64px;
+    height: 64px;
+    background: url(images/img.svg);
+}
