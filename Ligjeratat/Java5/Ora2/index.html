@@ -6,61 +6,117 @@
     <title>CSS Grid</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="#"><img src="img/logo/image.png" alt="Logo"></a>
-        <nav>
-            <ul>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <a href="#"><img class="logo" src="img/logo/image.png" alt="Logo"></a>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-items">Projects</li>
+                    <li class="nav-items">Contact</li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <div class="main-container">
-        <div class="intro">
-            <div class="intro__title">Shooting Stars</div>
-            <div class="intro__text">Hello, I'm Bakhtiyar Sattarov, <span>product designer</span> with experience in studios and startups</div>
-            <div>
-                <p><span class="des-pharagrap">Des</span>ign is about progress</p>
+    <main>
+        <div class="main-container">
+            <div class="intro">
+                <div class="intro__title">Shooting Stars</div>
+                <div class="intro__text">Hello, I'm Bakhtiyar Sattarov, <span>product designer</span> with experience in studios and startups</div>
+                <div class="intro-moto"><p><span>Des</span>ign is about progress</p></div>
             </div>
-        </div>
 
-        <div class="container">
-            <div class="col-div">
-                <div class="container__item"> <img src="img/images/img1.png" alt=""> </div>
-                <div class="container__item"> <img src="img/images/img4.png" alt=""> </div>
-                <div class="container__item"> <img src="img/images/img7.png" alt=""> </div>
-                <div class="container__item"> <img src="img/images/img10.png" alt=""> </div>
+            <div class="image-container">
+                <div class="col-div">
+                    <div class="container__item"> <img src="img/images/img1.png" alt=""> </div>
+                    <div class="container__item"> <img src="img/images/img4.png" alt=""> </div>
+                    <div class="container__item"> <img src="img/images/img7.png" alt=""> </div>
+                    <div class="container__item"> <img src="img/images/img10.png" alt=""> </div>
+                </div>
+                <div class="col-div">
+                    <div class="container__item"> <img src="img/images/img2.png" alt=""> </div>
+                    <div class="container__item"> <img src="img/images/img5.png" alt=""> </div>
+                    <div class="container__item"> <img src="img/images/img8.png" alt=""> </div>
+                    <div class="container__item"> <img src="img/images/img11.png" alt=""> </div>
+                </div>
+                <div class="col-div">
+                    <div class="container__item"> <img src="img/images/img3.png" alt=""> </div>
+                    <div class="container__item"> <img src="img/images/img6.png" alt=""> </div>
+                    <div class="container__item"> <img src="img/images/img9.png" alt=""> </div>
+                    <div class="container__item"> <img src="img/images/img12.png" alt=""> </div>
+                </div>
             </div>
-            <div class="col-div">
-                <div class="container__item"> <img src="img/images/img2.png" alt=""> </div>
-                <div class="container__item"> <img src="img/images/img5.png" alt=""> </div>
-                <div class="container__item"> <img src="img/images/img8.png" alt=""> </div>
-                <div class="container__item"> <img src="img/images/img11.png" alt=""> </div>
-            </div>
-            <div class="col-div">
-                <div class="container__item"> <img src="img/images/img3.png" alt=""> </div>
-                <div class="container__item"> <img src="img/images/img6.png" alt=""> </div>
-                <div class="container__item"> <img src="img/images/img9.png" alt=""> </div>
-                <div class="container__item"> <img src="img/images/img12.png" alt=""> </div>
-            </div>
-        </div>
 
-        <div class="service">
-            <div class="service__text">We love work hard and explore new things that's why we cover lot of things. Check our service list and view details</div>
-            <div class="service__list">
-                <ul class="service__list">
-                    <li class="service__list-item"><a href="">Multimedia</a></li>
-                    <li class="service__list-item"><a href="">Interactive Design</a></li>
-                    <li class="service__list-item"><a href="">Branding</a></li>
-                    <li class="service__list-item"><a href="">Creative design</a></li>
-                    <li class="service__list-item"><a href="">Packaging</a></li>
-                    <li class="service__list-item"><a href="">Coding</a></li>
+            <div class="service">
+                <div class="service__text"><h2>We love work hard and explore new things that's why we cover lot of things. Check our service list and view details</h2></div>
+                <div class="services">
+                    <ul class="service__list">
+                        <li class="service__list-item"><a href="">Multimedia</a></li>
+                        <li class="service__list-item"><a href="">Interactive Design</a></li>
+                        <li class="service__list-item"><a href="">Branding</a></li>
+                        <li class="service__list-item"><a href="">Creative design</a></li>
+                        <li class="service__list-item"><a href="">Packaging</a></li>
+                        <li class="service__list-item"><a href="">Coding</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="awards-continer">
+                <div class="awards">
+                    <div class="award-types"><h3>Awwwards</h3></div>
+                    <div class="award-subtypes"><h4>Site of the day</h4></div>
+                    <div class="award-subtypes"><h4>Best navigation</h4></div>
+                    <div class="award-winners">
+                        <h5>Genesis UI Kit</h5>
+                        <p>Application that helps to find nearest sport centres</p>
+                    </div>
+                    <div class="award-winners">
+                        <h5>Genesis Template</h5>
+                        <p>Application that helps to find nearest sport centres</p>
+                    </div>
+                    <div class="award-date">2018</div>
+                    <div class="award-date">2018</div>
+                </div>
+                <div class="awards">
+                    <div class="award-types"><h3>CSSDesignAwards</h3></div>
+                    <div class="award-subtypes"><h4>Site of the day</h4></div>
+                    <div class="award-subtypes"><h4>Best navigation</h4></div>
+                    <div class="award-winners">
+                        <h5>Genesis UI Kit</h5>
+                        <p>Application that helps to find nearest sport centres</p>
+                    </div>
+                    <div class="award-winners">
+                        <h5>Genesis Template</h5>
+                        <p>Application that helps to find nearest sport centres</p>
+                    </div>
+                    <div class="award-date">2017</div>
+                    <div class="award-date">2016</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="#"><img class="logo" src="img/logo/image.png" alt="Logo"></a>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-items">Projects</li>
+                    <li class="nav-items">Contact</li>
                 </ul>
-            </div>
+                <ul class="nav-socials">
+                    <li class="nav-socials__items"><img src="img/socials/basketball.svg" alt=""></li>
+                    <li class="nav-socials__items"><img src="img/socials/insta.svg" alt=""></li>
+                    <li class="nav-socials__items"><img src="img/socials/twitter.svg" alt=""></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
