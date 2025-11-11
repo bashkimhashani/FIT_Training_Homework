@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let dita = +prompt("Dita: [dd]");
+        let muaji = +prompt("Muji [mm]:");
+        let viti = +prompt("Viti [yyyy]");
+
+        let leap = (!(viti % 4) && (viti % 100) || !(viti % 400)) && 1 || 0;
+
+        let days = 
+            ((muaji == 1 || muaji == 3 || muaji == 5 || muaji == 7 || muaji == 8 || muaji == 10 || muaji == 12) && 31) ||
+            ((muaji == 4 || muaji == 6 || muaji == 9 || muaji == 11) && 30) ||
+            (muaji == 2 && (28 + leap));
+
+        dita = dita + 1;
+
+        (dita > days) && (dita = 1, muaji = muaji + 1);
+
+        (muaji > 12) && (muaji = 1, viti = viti + 1);
+
+        alert(dita + ":" + muaji + ":" + (viti % 100));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

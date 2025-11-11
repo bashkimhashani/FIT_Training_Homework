@@ -1,0 +1,24 @@
+.btn {
+  background-color: #043873;
+}
+.btn:hover {
+  background-color: #4F9CF9;
+}
+.btn--delete {
+  background-color: red;
+}
+.btn .icon:hover {
+  color: red;
+}
+
+.card__text {
+  background-color: red;
+}
+.card__content {
+  background-color: blue;
+}
+
+.card {
+  float: left;
+  width: 100%;
+}

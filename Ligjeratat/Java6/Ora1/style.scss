@@ -1,0 +1,85 @@
+
+$primary-dark: #043873;
+$primary-light: #4F9CF9;
+
+$secondary-yellow: #FFE492;
+$secondary-blue: #A7CEFC;
+$secondary-white: #FFFFFF;
+$secondary-dark: #212529;
+
+
+
+
+$accent: #FFE492;
+$danger: red;
+
+
+$s-gap: 16px;
+$m-gap: 20px;
+$l-gap: 32px;
+$xl-gap: 220px;
+
+@mixin trials($background-color, $price-tag-color, $text-color, $height, $border-color) {
+    height: $height;
+    background-color: $background-color;
+    border-color: $border-color;
+}
+
+@mixin sections($height, $width, $padding-verticlt, $padding-horizontly, $gap, $display, $display-direction) {
+    width: $width;
+    height: $height;
+    padding: $padding-verticlt $padding-horizontly;
+    display: $display;
+}
+
+
+@mixin buttonHover($basColor, $hoverColor) {
+
+}
+
+@mixin mobile {
+    @media (max-width:767px) {
+        @content;
+    }
+}
+
+.btn {
+    background-color: $primary-dark;
+    
+    &:hover {
+        background-color: $primary-light;
+    }
+    &--delete {
+        background-color: $danger;
+    }
+
+    .icon {
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+.card {
+    @extend %fullBlock;
+
+    &__text {
+        background-color: red;
+    }
+    &__content {
+        background-color: blue;
+    }
+}
+
+%fullBlock {
+    float: left;
+    width: 100%;
+}
+
+%btn {
+    width: 227px;
+    height: 60px;
+    padding: 16px 24px;
+    background-color: $primary-light;
+    border-radius: 12px;
+}
