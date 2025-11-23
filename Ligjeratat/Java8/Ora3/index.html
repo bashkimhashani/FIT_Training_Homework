@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="accordion">
+        <a href="#" class="accordion__toggle">Click to toggle me!</a>
+        <div class="accordion__body">
+          <p>1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <a href="#" class="accordion__toggle">Click to toggle me!</a>
+        <div class="accordion__body">
+          <p>2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <a href="#" class="accordion__toggle">Click to toggle me!</a>
+        <div class="accordion__body">
+          <p>3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+        </div>
+      </div>
+      <div class="accordion">
+        <a href="#" class="accordion__toggle">Click to toggle me!</a>
+        <div class="accordion__body">
+          <p>4 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ducimus ex corrupti earum vitae velit ad. Dolorum numquam quaerat repellat aperiam, assumenda deserunt id, dignissimos facilis maxime, quo beatae facere.</p>
+        </div>
+      </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.accordion__toggle').click(function(e) {
+          let $accordionBody = $(this).next();
+
+          $('.accordion__toggle').not($(this)).removeClass('active');
+
+          $(this).toggleClass('active');
+          
+          $('.accordion__body').not($accordionBody).slideUp();
+
+
+          $accordionBody.slideToggle();
+        });
+      });
+    </script>
+</html>
+

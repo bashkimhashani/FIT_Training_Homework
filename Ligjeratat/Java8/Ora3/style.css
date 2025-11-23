@@ -1,0 +1,4 @@
+.to-do-list__item {
+    display: flex;
+    flex-direction: row;
+}
