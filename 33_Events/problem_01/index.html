@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem 1</title>
+    <style>
+      #div-section,
+      #edit {
+        width: 80%;
+        min-height: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        white-space: pre-wrap;
+      }
+     
+      #edit {
+        display: none;
+        resize: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Edit - [Ctrl+E]</p>
+    <p>Save - [Ctrl+S]</p>
+    <div id="div-section">Hello this is Kimi</div>
+    <textarea id="edit"></textarea>
+    <script>
+        const display = document.getElementById('div-section');
+        const edit = document.getElementById('edit');
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey) {
+                const key = event.key.toLowerCase();
+                if (key === "e") {
+                    if (display.style.display !== 'none') {
+                        edit.value = display.innerText;
+                        display.style.display = 'none';
+                        edit.style.display = 'block';
+                        edit.focus();
+                        event.preventDefault();
+                    }
+                } else if (key === "s") {
+                    if (edit.style.display !== 'none') {
+                        display.innerText = edit.value;
+                        edit.style.display = 'none';
+                        display.style.display = 'block';
+                        event.preventDefault();
+                    }
+                }
+            }
+        });
+    </script>
+  </body>
+</html>
