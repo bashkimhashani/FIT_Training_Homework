@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<style>
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        border: 0px;
+        border-radius: 10px;
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    #modal-box {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 300;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal {
+        width: 400px;
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+    }
+
+    .modal>p {
+        font-size: 26px;
+        color: black;
+        font-family:  sans-serif;
+
+    }
+
+</style>
+<body>
+    <button id="open-btn" class="btn">OPEN</button>
+
+    <div id="modal-box">
+        <div class="modal">
+            <p>Oh Hi Mark!</p>
+            <button class="btn" id="close-btn">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Create an html page with OPEN button and a modal box. 
+        // The modal box should have text and a CLOSE button. 
+        // The modal box is not displayed from the beginning. 
+        // It appears when clicking the OPEN button and disappears when clicking CLOSE.
+
+        const openBtn = document.getElementById("open-btn");
+        const closeBtn = document.getElementById("close-btn");
+        const modalBox = document.getElementById("modal-box");
+
+        openBtn.onclick = function() {
+            modalBox.style.display = 'flex';
+            console.log("Open");
+        }
+
+        closeBtn.onclick = function() {
+            modalBox.style.display = 'none';
+            console.log("Close");
+        }
+
+    </script>
+</body>
+</html>

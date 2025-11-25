@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .btn {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 0px;
+            background-color: blueviolet;
+            margin: 0 auto;
+        }
+
+        .parentDiv {
+            width: 340px;
+            height: 120px;
+            margin: 0 auto;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .light {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            border: 1px solid black;
+            background-color: gray;
+        }
+
+        .active {}
+
+    </style>
+</head>
+<body>
+
+    <button class="btn" id="next-btn">Press</button>
+    <div class="parentDiv">
+        <div id="red"    class="light"></div>
+        <div id="yellow" class="light"></div>
+        <div id="green"  class="light active"></div>
+    </div>
+    
+</body>
+
+<script>
+    // Create an html page with streetlights and a button that switches the color to the next one.
+
+    let lightsList = document.querySelector(".parentDiv").children;
+
+    const nextBtn = document.getElementById("next-btn");
+    
+    nextBtn.addEventListener('click', () => {
+        let activeLightIndex = currentIndex(lightsList);
+        let nextActiveIndex = (activeLightIndex + 1) % 3;
+        
+        lightsList[activeLightIndex].style.backgroundColor = "gray";
+        lightsList[activeLightIndex].classList.remove("active");
+
+        lightsList[nextActiveIndex].classList.add("active");
+        lightsList[nextActiveIndex].style.backgroundColor = getBackgroundColor(nextActiveIndex);
+    })
+
+    function currentIndex(list) {
+        for (let i = 0; i < list.length; i++) {
+            if (list[i].classList.contains("active")) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    function getBackgroundColor(index) {
+        switch(index) {
+            case 0:
+                return "red";
+            case 1:
+                return "yellow";
+            default:
+                return "green";
+        }
+    }
+</script>
+</html>
