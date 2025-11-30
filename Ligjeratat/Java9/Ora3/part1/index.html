@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <form action="POST" id="myForm">
+        <label for="objectKey">Key: </label>
+        <input type="text" name="objectKey" id="objectKey"><br> <br>
+
+        <label for="objectValue">Value: </label>
+        <input type="text" name="objectValue" id="objectValue"> <br> <br>
+        
+        <select name="action" id="action">
+            <option id="1" value="1">Create</option>
+            <option id="2" value="2">Read</option>
+            <option id="3" value="3">Update</option>
+            <option id="4" value="4">Delete</option>
+        </select><br><br>
+
+        <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>
