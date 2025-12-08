@@ -10,39 +10,39 @@
 // Demonstrate the work of properties and methods.
 
  
-// class Circle {
-//     constructor(radius) {
-//         this.radius = radius;
-//     }
+class Circle {
+    constructor(radius) {
+        this.radius = radius;
+    }
 
-//     get getRadius() {
-//         return this.radius;
-//     }
+    get getRadius() {
+        return this.radius;
+    }
 
-//     set setRadius(radius) {
-//         this.radius = radius;
-//     }
+    set setRadius(radius) {
+        this.radius = radius;
+    }
 
-//     get getDiameter() {
-//         return this.radius * 2;
-//     }
+    get getDiameter() {
+        return this.radius * 2;
+    }
 
-//     area() {
-//         return Math.PI * this.radius**2;
-//     }
+    area() {
+        return Math.PI * this.radius**2;
+    }
 
-//     perimeter() {
-//         return 2 * Math.PI * this.radius;
-//     }
-// }
+    perimeter() {
+        return 2 * Math.PI * this.radius;
+    }
+}
 
-// let rrethi1 = new Circle(10);
+let rrethi1 = new Circle(10);
 
-// console.log(`The radius of the circle is: ${rrethi1.getRadius}`);
-// console.log(`Lets modify the radius of the circle: ${rrethi1.setRadius = 5}`);
-// console.log(`The diameter of the circle with radius: ${rrethi1.getRadius} is: ${rrethi1.getDiameter}`);
-// console.log(`The are of the circle is with radius: ${rrethi1.getRadius} is: ${rrethi1.area()}`);
-// console.log(`The perimeter of the circle is with radius: ${rrethi1.getRadius} is: ${rrethi1.perimeter()}`);
+console.log(`The radius of the circle is: ${rrethi1.getRadius}`);
+console.log(`Lets modify the radius of the circle: ${rrethi1.setRadius = 5}`);
+console.log(`The diameter of the circle with radius: ${rrethi1.getRadius} is: ${rrethi1.getDiameter}`);
+console.log(`The are of the circle is with radius: ${rrethi1.getRadius} is: ${rrethi1.area()}`);
+console.log(`The perimeter of the circle is with radius: ${rrethi1.getRadius} is: ${rrethi1.perimeter()}`);
 
 // 2) Implement a class that describes a stationery marker. It must have the following components:
 
